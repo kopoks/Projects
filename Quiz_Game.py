@@ -1,9 +1,3 @@
-# #Creating a simple trivia quiz game as a beginner
-
-
-
-
-
 
 
 user = input("What is the fastest land animal?: ")
@@ -70,6 +64,7 @@ user4 = input("Who was the first computer scientist?: " \
 "       C. Charles Babbage" \
 "       D. Grace Hooper" \
 "         ")
+# Quiz changes
 
 option_1 = "A"
 option_2 = "B"
