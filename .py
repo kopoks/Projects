@@ -1,4 +1,4 @@
-
+# Quiz Game
 
 user = input("What is the fastest land animal?: ")
 answer = "Cheetah"
