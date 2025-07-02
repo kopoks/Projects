@@ -1,6 +1,5 @@
 # Project 1
 # Quiz Game
-
 user = input("What is the fastest land animal?: ")
 answer = "Cheetah"
 
@@ -11,9 +10,6 @@ if user.capitalize() == answer:
 else:
     print("Incorrect!")
     score = -5
-
-
-
 
 user2 = int(input("What is the area of a triangle with 8 and 5 as base and height respectively?: "))
 
@@ -28,10 +24,7 @@ if user2 == area:
 else:
     print("Incorrect!")
     score1 = -5
-
-
-
-
+    
 user3 = input("A coin is tossed twice and a die is rolled once. What is the probability that the outcome is a head and a prime number?: " \
 "       A. 5/4" \
 "       B. 1/4" \
@@ -55,10 +48,7 @@ if user3 == prime_number_as_outcome or user3.capitalize() == option3:
 else:
     print("Incorrect!")
     score2 == -5
-
-
-
-
+    
 user4 = input("Who was the first computer scientist?: " \
 "       A. Ada Lovelace" \
 "       B. Alan Turing" \
@@ -80,8 +70,6 @@ else:
     print("Incorrect!")
     score3 = -5
 
-
-
 user5 = input("Who is the current president of Russia?: ")
 answer5 = "Vladimir putin" 
 answer_5 = "Putin"
@@ -94,9 +82,6 @@ else:
     print("Incorrect!")
     score4 = -5
 
-
-
-
 user6 = input("What is the estimated population of Ghana?: ")
 answer6 = "33.79 million" or "33.79"
 
@@ -107,9 +92,6 @@ if user6 >= "30 million" or "30":
 else:
     print("Incorrect!")
     score5 = -5
-
-
-
 
 user7 = input("Who is the richest person in the world right now?: ")
 answer7 = "Elon musk"
@@ -122,10 +104,6 @@ if user7.capitalize() == answer7 or user7.capitalize() == answer_7:
 else:
     print("Incorrect!")
     score6 = -5
-
-
-
-
 
 user8 = input("What is the scientific name for mosquito?: " \
 "       A. Culicidae" \
@@ -147,9 +125,6 @@ else:
     print("Incorrect!")
     score7 = -5
 
-
-
-
 user9 = input("What is the most popular sport in the world?: ")
 answer9 = "Football"
 
@@ -160,10 +135,6 @@ else:
     print("Incorrect!")
     score8 = -5
 
-
-
-
-
 user10 = input("What is the most populated country?: ")
 answer10 = "India"
 
@@ -173,10 +144,6 @@ if user10.capitalize() == answer10:
 else:
     print("Incorrect!")
     score9 = -5
-
-
-
-
 
 user11 = input("Who is the most popular person in the world right now?: " \
 "        A. Cristiano Ronaldo" \
@@ -197,9 +164,6 @@ else:
     print("Incorrect!")
     score10 = -5
 
-
-
-
 if score10 == 55:
     print(f"Outstanding! You got {score10} out of 55")
 elif score10 <= 55:
@@ -211,12 +175,10 @@ elif score10 <= 55:
 
 
 
-
 # Project 2
 # Basic Arithmetic Operations
 # Objectve: Build a small program that allows the user to choose from a menu and perform different geometry calculations.
 # Geometry Calculator
-
 import math
 while True:
     print("Welcome to the Geometry Calculator")
@@ -232,7 +194,6 @@ while True:
         print("Invalid choice, choose again")
         continue
     break
-
 
 if user == 1:
     radius = float(input("What is the radius of the circle? "))
@@ -250,7 +211,31 @@ elif user == 3:
     hypotenuse = math.sqrt(pow(first_side, 2) + pow(second_side, 2))
     print(f"The hypotanus of the triangle is {hypotenuse}")
 
-
 else:
     print("Thank you for using the geometry calculator")
 
+
+# Project3
+# Calculator
+operations = ["+", "-", "*", "/"]
+while True:
+    user = input(f"Enter the operation {operations}: ")
+    if user not in  operations:
+        print("Invalid choice!")
+        continue
+    break
+
+numb1 = float(input("Enter the first number: "))
+numb2 = float(input("Enter the second number: "))
+ 
+if user == "+":
+    print(numb1 + numb2)
+elif user == "-":
+    print(numb1 - numb2)
+elif user == "*":
+    print(numb1 * numb2)
+elif user == "/":
+    if numb2 == 0:
+        print("Error, cannot divide by zero")
+    else:
+        print(numb1 / numb2)
